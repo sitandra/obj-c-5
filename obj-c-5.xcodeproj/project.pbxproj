@@ -17,6 +17,8 @@
 		DF7700A32AB03E24006F663E /* obj_c_5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7700A22AB03E24006F663E /* obj_c_5Tests.m */; };
 		DF7700AD2AB03E24006F663E /* obj_c_5UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7700AC2AB03E24006F663E /* obj_c_5UITests.m */; };
 		DF7700AF2AB03E24006F663E /* obj_c_5UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7700AE2AB03E24006F663E /* obj_c_5UITestsLaunchTests.m */; };
+		DF7700BD2AB03EAD006F663E /* Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7700BC2AB03EAD006F663E /* Loader.m */; };
+		DFA8E5032AB1BC8D006A4B69 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA8E5022AB1BC8D006A4B69 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		DF7700A82AB03E24006F663E /* obj-c-5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "obj-c-5UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7700AC2AB03E24006F663E /* obj_c_5UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = obj_c_5UITests.m; sourceTree = "<group>"; };
 		DF7700AE2AB03E24006F663E /* obj_c_5UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = obj_c_5UITestsLaunchTests.m; sourceTree = "<group>"; };
+		DF7700BB2AB03EAD006F663E /* Loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
+		DF7700BC2AB03EAD006F663E /* Loader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loader.m; sourceTree = "<group>"; };
+		DFA8E5022AB1BC8D006A4B69 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFA8E5032AB1BC8D006A4B69 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +94,7 @@
 				DF7700A12AB03E24006F663E /* obj-c-5Tests */,
 				DF7700AB2AB03E24006F663E /* obj-c-5UITests */,
 				DF7700842AB03E21006F663E /* Products */,
+				DFA8E5012AB1BC8D006A4B69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +122,8 @@
 				DF7700942AB03E23006F663E /* LaunchScreen.storyboard */,
 				DF7700972AB03E23006F663E /* Info.plist */,
 				DF7700982AB03E23006F663E /* main.m */,
+				DF7700BB2AB03EAD006F663E /* Loader.h */,
+				DF7700BC2AB03EAD006F663E /* Loader.m */,
 			);
 			path = "obj-c-5";
 			sourceTree = "<group>";
@@ -134,6 +143,14 @@
 				DF7700AE2AB03E24006F663E /* obj_c_5UITestsLaunchTests.m */,
 			);
 			path = "obj-c-5UITests";
+			sourceTree = "<group>";
+		};
+		DFA8E5012AB1BC8D006A4B69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFA8E5022AB1BC8D006A4B69 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +287,7 @@
 				DF7700882AB03E21006F663E /* AppDelegate.m in Sources */,
 				DF7700992AB03E23006F663E /* main.m in Sources */,
 				DF77008B2AB03E21006F663E /* SceneDelegate.m in Sources */,
+				DF7700BD2AB03EAD006F663E /* Loader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

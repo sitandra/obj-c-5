@@ -6,9 +6,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Loader.h"
+#import <WebKit/WebKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController<UISearchBarDelegate>
+@property (strong, nonatomic) Loader * loader;
+@property (weak, nonatomic) IBOutlet WKWebView *webView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+-(void) performLoadingWithGETRequest;
+-(void) performLoadingWithPOSTRequest;
+-(void) performLoadingSearchResultsFromYandex: (NSString *) searchQuery;
 @end
 
